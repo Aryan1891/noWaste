@@ -327,10 +327,10 @@
     rxjs "^7.8.1"
     web3 "^4.6.0"
 
-"@drizzle-team/brocli@^0.10.1":
-  version "0.10.1"
-  resolved "https://registry.npmjs.org/@drizzle-team/brocli/-/brocli-0.10.1.tgz"
-  integrity sha512-AHy0vjc+n/4w/8Mif+w86qpppHuF3AyXbcWW+R/W7GNA3F5/p2nuhlkCJaTXSLZheB4l1rtHzOfr9A7NwoR/Zg==
+"@drizzle-team/brocli@^0.10.2":
+  version "0.10.2"
+  resolved "https://registry.npmjs.org/@drizzle-team/brocli/-/brocli-0.10.2.tgz"
+  integrity sha512-z33Il7l5dKjUgGULTqBsQBQwckHh5AbIuxhdsIxDDiZAzBOrZO6q9ogcWC65kU382AfynTfgNumVcNIjuIua6w==
 
 "@esbuild-kit/core-utils@^3.3.2":
   version "3.3.2"
@@ -348,15 +348,15 @@
     "@esbuild-kit/core-utils" "^3.3.2"
     get-tsconfig "^4.7.0"
 
-"@esbuild/win32-x64@0.18.20":
+"@esbuild/linux-x64@0.18.20":
   version "0.18.20"
-  resolved "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.18.20.tgz"
-  integrity sha512-kTdfRcSiDfQca/y9QIkng02avJ+NCaQvrMejlsB3RRv5sE9rRoeBPISaZpKxHELzRxZyLvNts1P27W3wV+8geQ==
+  resolved "https://registry.npmjs.org/@esbuild/linux-x64/-/linux-x64-0.18.20.tgz"
+  integrity sha512-UYqiqemphJcNsFEskc73jQ7B9jgwjWrSayxawS6UVFZGWrAAtkzjxSqnoclCXxWtfwLdzU+vTpcNYhpn43uP1w==
 
-"@esbuild/win32-x64@0.19.12":
+"@esbuild/linux-x64@0.19.12":
   version "0.19.12"
-  resolved "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.19.12.tgz"
-  integrity sha512-T1QyPSDCyMXaO3pzBkF96E8xMkiRYbUEZADd29SyPGabqxMViNoii+NcK7eWJAEoU6RZyEm5lVSIjTmcdoB9HA==
+  resolved "https://registry.npmjs.org/@esbuild/linux-x64/-/linux-x64-0.19.12.tgz"
+  integrity sha512-B71g1QpxfwBvNrfyJdVDexenDIt1CiDN1TIXLbhOw0KhJzE78KIFGX6OJ9MrtC0oOqMWf+0xop4qEU8JrJTwCg==
 
 "@eth-optimism/contracts@0.6.0":
   version "0.6.0"
@@ -1690,10 +1690,10 @@
   resolved "https://registry.npmjs.org/@next/env/-/env-14.2.7.tgz"
   integrity sha512-OTx9y6I3xE/eih+qtthppwLytmpJVPM5PPoJxChFsbjIEFXIayG0h/xLzefHGJviAa3Q5+Fd+9uYojKkHDKxoQ==
 
-"@next/swc-win32-x64-msvc@14.2.7":
+"@next/swc-linux-x64-gnu@14.2.7":
   version "14.2.7"
-  resolved "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-14.2.7.tgz"
-  integrity sha512-pxsI23gKWRt/SPHFkDEsP+w+Nd7gK37Hpv0ngc5HpWy2e7cKx9zR/+Q2ptAUqICNTecAaGWvmhway7pj/JLEWA==
+  resolved "https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-14.2.7.tgz"
+  integrity sha512-m6EBqrskeMUzykBrv0fDX/28lWIBGhMzOYaStp0ihkjzIYJiKUOzVYD1gULHc8XDf5EMSqoH/0/TRAgXqpQwmw==
 
 "@next/swc-linux-x64-musl@14.2.7":
   version "14.2.7"
@@ -2029,11 +2029,6 @@
     is-glob "^4.0.3"
     micromatch "^4.0.5"
     napi-wasm "^1.1.0"
-
-"@parcel/watcher-win32-x64@2.4.1":
-  version "2.4.1"
-  resolved "https://registry.npmjs.org/@parcel/watcher-win32-x64/-/watcher-win32-x64-2.4.1.tgz"
-  integrity sha512-+DvS92F9ezicfswqrvIRM2njcYJbd5mb9CUgtrHCHmvn7pPPa+nMDRu1o1bYYz/l5IB2NVGNJWiH7h1E58IF2A==
 
 "@parcel/watcher@^2.4.1":
   version "2.4.1"
@@ -4918,20 +4913,20 @@ dotenv@^8.1.0:
   resolved "https://registry.npmjs.org/dotenv/-/dotenv-8.6.0.tgz"
   integrity sha512-IrPdXQsk2BbzvCBGBOTmmSH5SodmqZNt4ERAZDmW4CT+tL8VtvinqywuANaFu4bOMWki16nqf0e4oC0QIaDr/g==
 
-drizzle-kit@^0.25.0:
-  version "0.25.0"
-  resolved "https://registry.npmjs.org/drizzle-kit/-/drizzle-kit-0.25.0.tgz"
-  integrity sha512-Rcf0nYCAKizwjWQCY+d3zytyuTbDb81NcaPor+8NebESlUz1+9W3uGl0+r9FhU4Qal5Zv9j/7neXCSCe7DHzjA==
+drizzle-kit@^0.29.1:
+  version "0.29.1"
+  resolved "https://registry.npmjs.org/drizzle-kit/-/drizzle-kit-0.29.1.tgz"
+  integrity sha512-OvHL8RVyYiPR3LLRE3SHdcON8xGXl+qMfR9uTTnFWBPIqVk/3NWYZPb7nfpM1Bhix3H+BsxqPyyagG7YZ+Z63A==
   dependencies:
-    "@drizzle-team/brocli" "^0.10.1"
+    "@drizzle-team/brocli" "^0.10.2"
     "@esbuild-kit/esm-loader" "^2.5.5"
     esbuild "^0.19.7"
     esbuild-register "^3.5.0"
 
-drizzle-orm@^0.33.0:
-  version "0.33.0"
-  resolved "https://registry.npmjs.org/drizzle-orm/-/drizzle-orm-0.33.0.tgz"
-  integrity sha512-SHy72R2Rdkz0LEq0PSG/IdvnT3nGiWuRk+2tXZQ90GVq/XQhpCzu/EFT3V2rox+w8MlkBQxifF8pCStNYnERfA==
+drizzle-orm@^0.37.0:
+  version "0.37.0"
+  resolved "https://registry.npmjs.org/drizzle-orm/-/drizzle-orm-0.37.0.tgz"
+  integrity sha512-AsCNACQ/T2CyZUkrBRUqFT2ibHJ9ZHz3+lzYJFFn3hnj7ylIeItMz5kacRG89uSE74nXYShqehr6u+6ks4JR1A==
 
 duplexify@^4.1.2:
   version "4.1.3"

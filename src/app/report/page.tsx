@@ -8,9 +8,15 @@ import { Libraries } from '@react-google-maps/api';
 import { createUser, getUserByEmail, createReport, getRecentReports } from '@/utils/db/actions';
 import { useRouter } from 'next/navigation';
 import { toast } from 'react-hot-toast'
+import { log } from 'console';
 
-const geminiApiKey = process.env.NEXT_PUBLIC_GEMINI_API_KEY;
-const googleMapsApiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+// const geminiApiKey = process.env.NEXT_PUBLIC_GEMINI_API_KEY;
+const geminiApiKey = "AIzaSyBXhSfQbK7-Xv3Ka3juxnRYLuFXR0fbh3A"
+
+// const googleMapsApiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+const googleMapsApiKey = "AIzaSyCn9yg3p0GOPO042xmXqZb1fDBKVW9i66E";
+
+
 
 const libraries: Libraries = ['places'];
 
@@ -127,10 +133,21 @@ export default function ReportPage() {
 
       const result = await model.generateContent([prompt, ...imageParts]);
       const response = await result.response;
-      const text = response.text();
+
+      console.log("response");
+      console.log(response);
       
+      console.log("heheheheeh");
+      
+      
+      let text = response.text();
+      console.log(text);
+      text = text.slice(8, -4);   
+      
+
+
       try {
-        const parsedResult = JSON.parse(text);
+        const parsedResult = await JSON.parse(text);
         if (parsedResult.wasteType && parsedResult.quantity && parsedResult.confidence) {
           setVerificationResult(parsedResult);
           setVerificationStatus('success');

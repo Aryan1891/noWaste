@@ -8,7 +8,9 @@ import { getWasteCollectionTasks, updateTaskStatus, saveReward, saveCollectedWas
 import { GoogleGenerativeAI } from "@google/generative-ai"
 
 // Make sure to set your Gemini API key in your environment variables
-const geminiApiKey = process.env.NEXT_PUBLIC_GEMINI_API_KEY
+// const geminiApiKey = process.env.GEMINI_API_KEY||"AIzaSyBXhSfQbK7-Xv3Ka3juxnRYLuFXR0fbh3A"
+const geminiApiKey = "AIzaSyBXhSfQbK7-Xv3Ka3juxnRYLuFXR0fbh3A";
+
 
 type CollectionTask = {
   id: number
@@ -164,8 +166,11 @@ export default function CollectPage() {
 
       const result = await model.generateContent([prompt, ...imageParts])
       const response = await result.response
-      const text = response.text()
-      
+   
+      let text = response.text();
+      console.log(text);
+      text = text.slice(8, -4);   
+
       try {
         const parsedResult = JSON.parse(text)
         setVerificationResult({
